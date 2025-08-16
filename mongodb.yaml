@@ -1,5 +1,5 @@
 - name: installing mongodb
-  hosts: frontend
+  hosts: mongodb
   become: yes
   tasks:
   - name: replacing the repo
