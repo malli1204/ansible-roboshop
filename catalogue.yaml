@@ -75,7 +75,7 @@
   
   - name: loading data
     ansible.builtin.shell: mongosh --host mongodb.malli12.site </app/db/master-data.js
-    when: catalogue_output.stdout | int > 0
+    when: catalogue_output.stdout | int < 0
 
 
   
