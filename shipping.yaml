@@ -63,7 +63,7 @@
   - name: starting services
     ansible.builtin.service:
       name: shipping
-      state: present
+      state: started
       enabled: yes
   
   - name: import data
