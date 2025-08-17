@@ -65,9 +65,9 @@
       name: mongodb-mongosh
       state: present
 
-  - name: check products loaded or not
-    ansible.builtin.shell: mongosh --host mongodb.malli12.site --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
-      register: catalogue_output
+  # - name: check products loaded or not
+  #   ansible.builtin.command: mongosh --host mongodb.malli12.site --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
+  #     register: catalogue_output
 
   - name: printing catalogue output
     ansible.builtin.debug:
